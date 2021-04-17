@@ -13,22 +13,23 @@ has_many :patients
 has_many :patient_details
 
 ##  patients テーブル
-| Column                 | Type          | Options                        |
-| ---------------------- | ------------- | ------------------------------ |
-| family_name_kanji      | string        | null: false                    |
-| first_name_kanji       | string        | null: false                    |
-| age                    | integer       | null: false                    |
-| sex                    | integer       | null: false                    |
-| postal_code            | string        | null: false                    |
-| address                | string        | null: false                    |
-| family_living_together | integer       |                                |
-| disease_name           | string        |                                |
-| medical_history        | string        |                                |
-| surgical_history       | string        |                                |
-| infection              | string        |                                |
-| classification         | string        |                                |
-| comment                | text          |                                |
-| user                   | references    | null: false, foreign_key: true |
+| Column                    | Type          | Options                        |
+| ------------------------- | ------------- | ------------------------------ |
+| family_name               | string        | null: false                    |
+| first_name                | string        | null: false                    |
+| age                       | integer       | null: false                    |
+| sex_id                    | integer       | null: false                    |
+| height                    | integer       |                                |
+| weight                    | integer       |                                |
+| postal_code               | string        |                                |
+| address                   | string        |                                |
+| family_living_together_id | integer       |                                |
+| disease_name              | string        | null: false                    |
+| medical_history           | string        | null: false                    |
+| surgical_history          | string        |                                |
+| infection                 | string        |                                |
+| comment                   | text          |                                |
+| user                      | references    | null: false, foreign_key: true |
 
 ### Association
 belongs_to :user
