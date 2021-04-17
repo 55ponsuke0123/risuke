@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  background-color: lightseagreen;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: rgb(9, 105, 60);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fafafa;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 20px;
+}
+
+.menus {
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.menu{
+  padding: 20px 0 40px;
+}
+
+.menu-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  writing-mode: vertical-rl;
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight:bold;
+  float: right;
+  text-align: center;
+}
+
+
+.maru {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-flow: column; 
+  vertical-align: top;
+}
+/* 円の大きさ */
+.size_normal{
+  width: 120px;
+  height: 120px;
+}
+/* 文字の大きさ */
+.letter1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+/* 円と文字の色 */
+.pink1 {
+  background-color:lightseagreen;
+  color: white;
+  font-weight:bold;
+}
+
+/* 文字の大きさ */
+.letter2 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+/* 円と文字の色 */
+.pink2 {
+  background-color:lightseagreen;
+  color: white;
+  font-weight:bold;
+}
+
