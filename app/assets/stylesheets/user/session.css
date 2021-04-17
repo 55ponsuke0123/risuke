@@ -20,14 +20,19 @@ p::first-letter {
   font-size: 50px;
 }
 
+.form-text {
+  font-size: 18px;
+}
+
 .actions {
   text-align: center;
 }
 
-.login-red-btn {
+.login-btn {
   background: #1b9aaa;
   width: 200px;
   padding: 0.5em;
+  margin-top: 20px;
   color: #fff;
   font-size: 16px;
   border: none;

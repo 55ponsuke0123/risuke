@@ -18,6 +18,8 @@
 }
 
 .header-title {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 40px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #fafafa;
@@ -42,7 +44,21 @@
 .menu-name a{
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
+
+.user-name {
+  color: white;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-therapist-name {
+  position: absolute;
+  bottom: 0;
+}
+
 
 .title {
   writing-mode: vertical-rl;
@@ -50,7 +66,7 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight:bold;
   float: right;
-  text-align: center;
+  text-align: right;
 }
 
 
@@ -62,33 +78,36 @@
   flex-flow: column; 
   vertical-align: top;
 }
-/* 円の大きさ */
+
 .size_normal{
   width: 120px;
   height: 120px;
 }
-/* 文字の大きさ */
+
 .letter1 {
   font-size: 3em;
   line-height: 1.5em;
 }
 
-/* 円と文字の色 */
+
 .pink1 {
   background-color:lightseagreen;
   color: white;
   font-weight:bold;
 }
 
-/* 文字の大きさ */
+
 .letter2 {
   font-size: 3em;
   line-height: 1.5em;
 }
-/* 円と文字の色 */
+
 .pink2 {
   background-color:lightseagreen;
   color: white;
   font-weight:bold;
 }
 
+.main-title-pict {
+  float: left;
+}

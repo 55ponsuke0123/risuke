@@ -5,26 +5,35 @@
        RISUKE<div class='sub-title'>ー理学療法評価アプリー</div>
       </div>
     </div>
-    <div class='menu'>
-      <div class='menu-name'>
-        <a href="#">施設登録</a>
-      </div>
-    </div>
+
+    <% if user_signed_in? %>
     <div class="menu">
       <div class="menu-name">
-        <a href="#">ログイン</a>
-      </div>
-    </div>
-    <div class="menu">
-      <div class="menu-name">
-       <a href="#">患者登録</a>
+       <%= link_to '患者登録', new_patient_path, class: "patient" %>
       </div>
       </div>
       <div class="menu">
       <div class="menu-name">
-        <a href="#">ログアウト</a>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
       </div>
     </div>
+    <div class='user-name'>
+     <div class='user-therapist-name'>
+     <%= "#{current_user.therapist_name}さんのページ" %>
+     </div>
+    </div>
+   <% else %>
+    <div class='menu'>
+      <div class='menu-name'>
+        <%= link_to '新規登録', new_user_registration_path, class: "registration" %>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-name">
+        <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+      </div>
+    </div>
+    <% end %>
   </div>
  <div class='main-contents'>
   <div class='main-title'>
@@ -39,11 +48,11 @@
     </div>
     <span class="letter2-title">ける！</span>
     </div>
+   </div>
       <div class="main-title-pict">
       <%= image_tag "1519292803.png", size: "500x400" %>
       </div>
   </div>
- </div>
 </div>
 
    

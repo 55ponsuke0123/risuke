@@ -102,6 +102,7 @@ h1::first-letter {
 .form_btn {
   background: #1b9aaa;
   width: 200px;
+  margin-top: 20px;
   padding: 0.5em;
   color: #fff;
   font-size: 16px;

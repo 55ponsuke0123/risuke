@@ -5,6 +5,7 @@
 | ------------------- | ---------- | -------------------------- |
 | facility_name       | string     |                            |
 | department_name     | string     |                            |
+| therapist_name      | string     | null: false                |
 | email               | string     | null: false, unique: true  |
 | encrypted_password  | string     | null: false                |
 
@@ -15,8 +16,7 @@ has_many :patient_details
 ##  patients テーブル
 | Column                    | Type          | Options                        |
 | ------------------------- | ------------- | ------------------------------ |
-| family_name               | string        | null: false                    |
-| first_name                | string        | null: false                    |
+| name                      | string        | null: false                    |
 | age                       | integer       | null: false                    |
 | sex_id                    | integer       | null: false                    |
 | height                    | integer       |                                |
