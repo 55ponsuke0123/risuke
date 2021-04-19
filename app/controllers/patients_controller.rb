@@ -1,7 +1,7 @@
 class PatientsController < ApplicationController
   
   def index
-    @patients = Patient.all
+    @patients = Patient.includes(:user).order(created_at: :desc) 
   end
 
   def new
@@ -21,7 +21,21 @@ class PatientsController < ApplicationController
     @patient = Patient.find(params[:id])
   end
 
+  def edit
+    @patient = Patient.find(params[:id])
+  end
+
+  def update
+    @patient = Patient.find(params[:id])
+    if @patient.update(patient_params)
+      redirect_to patient_path
+     else
+     render :edit
+     end
+  end
+
   def destroy
+    @patient = Patient.find(params[:id])
   end
 
   private 

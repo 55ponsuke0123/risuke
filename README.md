@@ -34,7 +34,7 @@ has_many :patient_details
 ### Association
 belongs_to :user
 
-##  registered_patient_details テーブル
+##  evaluated_patient_details テーブル
 | Column                 | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
 
@@ -44,7 +44,7 @@ belongs_to :user
 ### Association
 belongs_to :patient
 
-##  registered_patients テーブル
+##  evaluated_patients テーブル
 | Column             | Type         | Options                        |
 | ------------------ | ------------ | ------------------------------ |
 | patient_id         | references   | null: false, foreign_key: true |

@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  padding:0;
-  }
+  padding: 0;
+}
 
 .wrapper {
   display: flex;
@@ -45,31 +45,26 @@
   font-size: 20px;
 }
 
-.menu {
+.menu-btn {
   display: inline-block; 
   background: #1b9aaa;
     width: 200px;
     padding: 0.5em;
     margin-top: 25px;
-    margin-right: 25px;
     border: none;
     border-radius: 4px;
     text-align: center;
-    position: relative;
-    left: 600px;
 }
 
-.menu a{
+.menu-btn a{
   text-decoration: none;
   color: white;
   font-size: 20px;
   }
 
-.user-therapist-name {
+.user-name {
   color: white;
   font-size: 25px;
-  margin-top: 20px;
-  margin-left: 15px;
 }
 
 .rooms {
@@ -79,6 +74,9 @@
   text-align: center;
 }
 
+.rooms a {
+  text-decoration: none;
+}
 
 .title {
   writing-mode: vertical-rl;
@@ -147,19 +145,11 @@
   font-weight:bold;
 }
 
+
 .main-title-pict {
-  position: relative;
-	top: 120px;
-  right: 100px;
-  text-align: right;
+  display: inline-block;
+	margin-top: 100px;
+  margin-left: 150px;
+  margin-bottom: 0;
 }
 
-.dialogue {
-  writing-mode: vertical-rl;
-  font-size: 30px;
-  font-family:  'arial black',serif;
-  font-weight:bold;
-  position: relative;
-  left: 150px;
-  bottom: 70px;
-}

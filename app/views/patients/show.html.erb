@@ -1,0 +1,52 @@
+<div class="patient-show">
+  <div class="patient-box">
+    <h4 class="name">
+      <%= @patient.name %>
+    </h4>
+
+
+    <div class="patient-explain-box">
+      <span><%= @patient.disease_name %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-patient">年齢</th>
+          <td class="detail-value"><%= @patient.age %></td>
+        </tr>
+        <tr>
+          <th class="detail-patient">郵便番号</th>
+          <td class="detail-value"><%= @patient.postal_code %></td>
+        </tr>
+        <tr>
+          <th class="detail-patient">住所</th>
+          <td class="detail-value"><%= @patient.address %></td>
+        </tr>
+        <tr>
+          <th class="detail-patient">既往歴</th>
+          <td class="detail-value"><%= @patient.medical_history %></td>
+        </tr>
+        <tr>
+          <th class="detail-patient">手術歴</th>
+          <td class="detail-value"><%= @patient.surgical_history %></td>
+        </tr>
+        <tr>
+          <th class="detail-patient">留意すべき感染症</th>
+          <td class="detail-value"><%= @patient.surgical_history %></td>
+        </tr>
+      </tbody>
+    </table>
+<%# if user_signed_in? && @patient.evaluated_patient.blank? %>
+        <% if current_user.id == @patient.user_id %> 
+         <div class=three-btn>
+           <%= link_to "患者情報を編集する", edit_patient_path(@patient), method: :get, class: "patient-edit-btn" %>
+           <%= link_to "患者名簿から削除する", patient_path(@patient), method: :delete, class:"patient-destroy" %> 
+          <%#= link_to "評価する", _orders_path(@patient), class:"patient-first-btn"%> 
+          </div>
+        <% end %> 
+    <%# <% end %>  
+    <div class='second-action'>
+        <%=link_to "トップへ戻る", root_path, class: :top_btn%> 
+        </div>
+    </div>
+  </div>
