@@ -36,8 +36,7 @@
         </tr>
       </tbody>
     </table>
-<%# if user_signed_in? && @patient.evaluated_patient.blank? %>
-        <% if current_user.id == @patient.user_id %> 
+<% if user_signed_in? %> 
          <div class=three-btn>
            <%= link_to "患者情報を編集する", edit_patient_path(@patient), method: :get, class: "patient-edit-btn" %>
            <%= link_to "患者名簿から削除する", patient_path(@patient), method: :delete, class:"patient-destroy" %> 
