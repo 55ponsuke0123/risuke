@@ -1,4 +1,5 @@
 class PatientsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   
   def index
     @patients = Patient.includes(:user).order(created_at: :desc) 
@@ -36,6 +37,9 @@ class PatientsController < ApplicationController
 
   def destroy
     @patient = Patient.find(params[:id])
+    if @patient.destroy 
+      redirect_to root_path
+    end
   end
 
   private 

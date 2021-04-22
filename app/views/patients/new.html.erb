@@ -29,10 +29,10 @@
           <span class="indispensable">必須</span>
         </div>
         <div class="col-sm-1">
-        <%= f.radio_button :sex_id, :male %>
-        <%= f.label :sex_id, "男性", {value: :male} %>
-        <%= f.radio_button :sex_id, :female %>
-        <%= f.label :sex_id, "女性", {value: :female} %>
+        <%= f.radio_button :sex_id, 1 %>
+        <%= f.label :sex_id, "男性" %>
+        <%= f.radio_button :sex_id, 2 %>
+        <%= f.label :sex_id, "女性" %>
         </div>
         </div>
         <div class="form-group">
@@ -69,10 +69,10 @@
           <span class="indispensable">必須</span>
         </div>
         <div class="col-sm-2">
-        <%= f.radio_button :family_living_together_id, :presence %>
-        <%= f.label :family_living_together_id, "有", {value: :presence} %>
-        <%= f.radio_button :family_living_together_id, :absence %>
-        <%= f.label :family_living_together_id, "無", {value: :absence} %>
+        <%= f.radio_button :family_living_together_id, 1 %>
+        <%= f.label :family_living_together_id, "有" %>
+        <%= f.radio_button :family_living_together_id, 2 %>
+        <%= f.label :family_living_together_id, "無" %>
         </div>
         </div>
       <div class="form-group">
