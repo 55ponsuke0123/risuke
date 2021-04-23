@@ -13,8 +13,10 @@
       </div>
      </div>
      <div class="rooms">
+     <% if current_user.id == @patients.user_id %>
        <% @patients.each do |patient| %>
         <%= link_to "#{patient.name}さん", patient_path(patient.id), class: "patient-detail" %><br />
+      <% end %>
       <% end %>
      </div>
     <% end %>

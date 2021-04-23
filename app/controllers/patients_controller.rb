@@ -2,7 +2,7 @@ class PatientsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   
   def index
-    @patients = Patient.includes(:user).order(created_at: :desc) 
+    @patients = Patient.includes(:user)
   end
 
   def new
