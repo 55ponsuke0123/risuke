@@ -1,0 +1,79 @@
+class CreatePatientDetails < ActiveRecord::Migration[6.0]
+  def change
+    create_table :patient_details do |t|
+      t.integer :turn_over
+      t.integer :get_up
+      t.integer :sitting_position
+      t.integer :stand_up
+      t.integer :standing
+      t.integer :transfer
+      t.integer :wheelchair_operation
+      t.integer :walking
+      t.integer :stairs
+      t.integer :meal_1
+      t.integer :shape_1
+      t.integer :balneum_1
+      t.integer :outer_wear
+      t.integer :under_wear
+      t.integer :toilet_1
+      t.integer :urination_1
+      t.integer :defecation_1
+      t.integer :bed_transfer_1
+      t.integer :toilet_transfer_1
+      t.integer :bathtub_transfer_1
+      t.integer :walking_1
+      t.integer :stair_1
+      t.integer :understanding_1
+      t.integer :expression_1
+      t.integer :alternating_current_1
+      t.integer :solving_1
+      t.integer :memory_1
+      t.integer :total_1
+      t.integer :meal_2
+      t.integer :transfer_2
+      t.integer :shape_2
+      t.integer :toilet_2
+      t.integer :balneum_2
+      t.integer :walking_2
+      t.integer :stair_2
+      t.integer :changing_clothes
+      t.integer :urination_2
+      t.integer :defecation_2
+      t.integer :total_2
+      t.integer :relationship_sole
+      t.integer :left_right_difference
+      t.string :alignment
+      t.text :alignment_comment
+      t.integer :postural_tension
+      t.integer :impact
+      t.integer :speed
+      t.string :stride
+      t.string :durability
+      t.string :walking_pattern
+      t.string :foot_position
+      t.integer :upset
+      t.integer :redundancy
+      t.integer :applicability
+      t.integer :gait
+      t.string :dementia_degree
+      t.text :impact_daily_life
+      t.string :pain_area
+      t.string :appearance_time
+      t.string :degree_of_pain
+      t.integer :factor_tissue
+      t.string :rom_part_degree
+      t.integer :joint_capsule
+      t.integer :soft_tissue
+      t.string :muscle_weakness
+      t.string :muscle_weakness_factor
+      t.string :sense_cooperation
+      t.string :sense_cooperation_impact
+      t.string :paresthesia
+      t.string :paresthesia_impact
+      t.text :others
+      t.text :generalization
+      t.references :evaluated_patient, null: false,  foreign_key: true
+      t.timestamps
+    end
+  end
+end

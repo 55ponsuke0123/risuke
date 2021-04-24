@@ -40,7 +40,7 @@
          <div class='three-btn'>
            <%= link_to "患者情報を編集する", edit_patient_path(@patient), method: :get, class: "patient-edit-btn" %>
            <%= button_to "患者名簿から削除する", patient_path(@patient), method: :delete, class: "patient-destroy" %> 
-          <%#= link_to "評価する", _orders_path(@patient), class:"patient-first-btn"%> 
+          <%= link_to "評価する", new_patient_evaluation_path(@patient), class:"patient-evaluate-btn"%> 
           </div>
         <% end %> 
     <%# <% end %>  

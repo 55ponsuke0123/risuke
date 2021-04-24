@@ -48,11 +48,10 @@
   padding: 2vh 10vw;
 }
 
-.patient-first-btn {
+.patient-evaluate-btn {
   text-align: center;
   background-color: #1b9aaa;
   font-size: 24px;
-  font-weight: bold;
   color: white;
   margin: 20px 0px;
   padding: 2vh 10vw;
@@ -88,3 +87,4 @@
 }
 
 
+ 
