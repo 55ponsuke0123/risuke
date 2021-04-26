@@ -1,23 +1,27 @@
 .transaction-title-text {
   text-align: center;
-}
-
-.detail-list-1 {
+ }
+ 
+.evaluation-form {
   display: flex;
- text-align: center; 
- justify-content: space-between;
+  padding: auto;
 }
 
+.select-box {
+  border: none;
+  font-size: 16px;
+}
 
 
 
 .evaluation-btn {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #1b9aaa;
   border: #1b9aaa;;
   font-size: 24px;
   color: white;
-  margin: 20px 0px;
   padding: 2vh 10vw;
 }
 

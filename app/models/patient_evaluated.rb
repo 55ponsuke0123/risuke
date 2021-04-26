@@ -151,6 +151,34 @@ class PatientEvaluated
   belongs_to :wheelchair_operation
   belongs_to :walking
   belongs_to :stairs
+  belongs_to :meal_1
+  belongs_to :shape_1
+  belongs_to :balneum_1
+  belongs_to :outer_wear
+  belongs_to :under_wear
+  belongs_to :toilet_1
+  belongs_to :urination_1
+  belongs_to :defecation_1
+  belongs_to :bed_transfer_1
+  belongs_to :toilet_transfer_1
+  belongs_to :bathtub_transfer_1
+  belongs_to :walking_1
+  belongs_to :stair_1
+  belongs_to :understanding_1
+  belongs_to :expression_1
+  belongs_to :alternating_current_1
+  belongs_to :solving_1
+  belongs_to :memory_1
+  belongs_to :meal_2
+  belongs_to :transfer_2
+  belongs_to :shape_2
+  belongs_to :toilet_2
+  belongs_to :balneum_2
+  belongs_to :walking_2
+  belongs_to :stair_2
+  belongs_to :changing_clothes
+  belongs_to :urination_2
+  belongs_to :defecation_2
 end
 
 
