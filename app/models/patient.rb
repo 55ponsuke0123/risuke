@@ -2,6 +2,7 @@ class Patient < ApplicationRecord
   belongs_to :user
 
   validates :sex_id, presence: true
+  validates :age, presence: true
 
   VALID_AGE_REGEX = /\A[0-9]+\z/.freeze    
   validates :age, presence: true, format: { with: VALID_AGE_REGEX }   

@@ -1,5 +1,4 @@
-class TurnOver < ActiveHash::Base
-
+class MovingOnBed < ActiveHash::Base
   self.data = [
     { id: 1, name: '自立' },
     { id: 2, name: '見守り' },

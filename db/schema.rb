@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_24_045241) do
+ActiveRecord::Schema.define(version: 2021_04_26_064006) do
 
   create_table "evaluated_patients", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "patient_id", null: false
@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(version: 2021_04_24_045241) do
     t.integer "factor_tissue_id"
     t.integer "joint_capsule_id"
     t.integer "soft_tissue_id"
+    t.integer "moving_on_bed_id"
     t.index ["evaluated_patient_id"], name: "index_patient_details_on_evaluated_patient_id"
   end
 

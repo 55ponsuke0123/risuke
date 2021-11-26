@@ -39,11 +39,11 @@
 <% if user_signed_in? %> 
          <div class='three-btn'>
            <%= link_to "患者情報を編集する", edit_patient_path(@patient), method: :get, class: "patient-edit-btn" %>
-           <%= button_to "患者名簿から削除する", patient_path(@patient), method: :delete, class: "patient-destroy" %> 
-          <%= link_to "評価する", new_patient_evaluation_path(@patient), class:"patient-evaluate-btn"%> 
+           <%= button_to "患者名簿から削除する", patient_path(@patient), method: :delete, class: "patient-destroy" %>
+           <%= link_to "評価する", new_patient_evaluation_path(@patient), class:"patient-evaluate-btn"%> 
+          <%= link_to "評価内容を編集する", edit_patient_evaluation_path(@patient), class:"evaluation-edit-btn"%> 
           </div>
-        <% end %> 
-    <%# <% end %>  
+        <% end %>  
     <div class='second-action'>
         <%=link_to "トップへ戻る", root_path, class: :top_btn%> 
         </div>

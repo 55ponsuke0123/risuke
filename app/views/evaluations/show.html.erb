@@ -3,14 +3,6 @@
     <h1 class='transaction-title-text'>
       評価内容
     </h1>
-  
-
-    
-   <%= form_with model: @patient_detail, url: patient_evaluations_path(@patient), id: 'charge-form', class: 'transaction-form-wrap', local: true do |f| %>
-      
-      <%#= render 'shared/error_messages', model: f.object %>
-       
-
 
     <div class='evaluations-form'>
       <div class="form-group">
@@ -29,8 +21,8 @@
       <th class="detail-patient">起立</th>
       </tr>
       <tr>
-      <td class="detail-value"><%= f.collection_select(:turn_over_id, TurnOver.all, :id, :name, {}, {class:"select-box", id:"patient-1-1"}) %></td>
-      <td class="detail-value"><%= f.collection_select(:moving_on_bed_id, MovingOnBed.all, :id, :name, {}, {class:"select-box", id:"patient-1-10"}) %></td>
+      <td class="detail-value"><%= @patient_evaluated.turn_over.name %></td>
+      <td class="detail-value"><%= @patient_detail.moving_on_bed.name %></td>
       <td class="detail-value"><%= f.collection_select(:get_up_id, GetUp.all, :id, :name, {}, {class:"select-box", id:"patient-1-2"}) %></td>
       <td class="detail-value"><%= f.collection_select(:sitting_position_id, SittingPosition.all, :id, :name, {}, {class:"select-box", id:"patient-1-3"}) %></td>
       <td class="detail-value"><%= f.collection_select(:stand_up_id, StandUp.all, :id, :name, {}, {class:"select-box", id:"patient-1-4"}) %></td>
@@ -385,9 +377,5 @@
         </div>
         <%= f.text_field :generalization, class:"input-default", id:"generalization", placeholder:"例）治療方針等"%>
       </div>
-      <div class="green_btn">
-      <%= f.submit "登録する" ,class:"evaluation-btn" %>
-      </div>
-  <% end %>
   </div>
   </div>
